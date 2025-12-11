@@ -3,7 +3,8 @@
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![Hardware](https://img.shields.io/badge/Hardware-STM32L476-blue)
 ![Motion](https://img.shields.io/badge/Motion-CNC_6550-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Language](https://img.shields.io/badge/Language-C%2B%2B-red)
+
 
 An automated conformal coating machine developed for PCB manufacturing, built using an **STM32L476** microcontroller, **CNC 6550** 2-axis motion system, and **VL6180X ToF** sensor logic. This project automates the application of acrylic coating to protect PCBs from environmental damage.
 
@@ -71,51 +72,4 @@ This project implements a compact and fully automated system capable of deliveri
 
 ---
 
-## 🧪 R&D and PCB Design
 
-This project involved extensive Research & Development to meet industry standards. 
-
-* **PCB Design:** The main controller board was designed using [Your CAD Software, e.g., KiCad/Altium].
-* **Assembly:** Components are Surface Mount Devices (SMD), hand-soldered and reflowed.
-* **Testing:** Rigorous testing of spray patterns and consistency.
-
-| Component | Type | Description |
-| :--- | :--- | :--- |
-| **MCU** | STM32L476 | Main Controller |
-| **Sensor** | VL6180X | ToF Distance Sensor |
-| **Motion** | CNC 6550 | X-Y Gantry |
-| **Valves** | Solenoid Pinch | Fluid Control |
-
----
-
-## 📸 Gallery
-
-### The Machine
-*(Place photos of the full machine here)*
-`![Machine Front View](images/machine_front.jpg)`
-
-### Custom PCB
-*(Place photos of your soldered SMD board here)*
-`![Custom PCB](images/pcb_top.jpg)`
-
----
-
-## 💻 Firmware & logic
-
-The firmware is written in **C** using **STM32CubeIDE**.
-
-**Workflow:**
-1.  **Idle:** Conveyor moves; sensor polls for distance.
-2.  **Detect:** Object < Threshold -> Stop Conveyor -> Open Air Valve.
-3.  **Spray:** Open Liquid Valve -> Execute G-Code Motion Pattern.
-4.  **Finish:** Close Liquid -> Close Air -> Home CNC.
-5.  **Eject:** Restart Conveyor.
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-*Project created by [Your Name]*
