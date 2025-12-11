@@ -8,7 +8,7 @@ To ensure the PCB moves smoothly for even coating, we use a 12V DC motor equippe
 ## 🔌 Circuit Diagram
 The motor is driven using a **Low-Side MOSFET Switch**. This design was chosen for efficiency and direct compatibility with the STM32's 3.3V logic.
 
-<img width="1024" height="718" alt="image" src="https://github.com/user-attachments/assets/47d4f606-efd2-41f4-8739-cb6e2d87adc4" />
+<img width="524" height="358" alt="image" src="https://github.com/user-attachments/assets/47d4f606-efd2-41f4-8739-cb6e2d87adc4" />
 
 
 ### Component Breakdown
